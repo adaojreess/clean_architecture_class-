@@ -19,13 +19,14 @@ class ResultSearchModel extends ResultSearch {
 
   factory ResultSearchModel.fromMap(Map<String, dynamic> map) {
     return ResultSearchModel(
-      map['title'],
-      map['content'],
-      map['img'],
+      map['login'],
+      '${map['id']}',
+      map['avatar_url'],
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  factory ResultSearchModel.fromJson(String source) => ResultSearchModel.fromMap(json.decode(source));
+  factory ResultSearchModel.fromJson(String source) =>
+      ResultSearchModel.fromMap(json.decode(source));
 }

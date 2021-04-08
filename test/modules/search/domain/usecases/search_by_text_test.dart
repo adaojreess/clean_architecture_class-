@@ -12,7 +12,7 @@ main() {
   final repository = SearchRepositoryMock();
   final usecase = SearchByTextImpl(repository);
 
-  test('> deve retorna uma lista de ResultSearch', () async {
+  test('> Deve retornar uma lista de ResultSearch', () async {
     when(repository.search(any))
         .thenAnswer((_) async => Right(<ResultSearch>[]));
 
@@ -20,7 +20,7 @@ main() {
     expect(result | null, isA<List<ResultSearch>>());
   });
 
-  test('> deve retorna um exception caso o texto seja invalido', () async {
+  test('> Deve retornar um exception caso o texto seja invalido', () async {
     when(repository.search(any))
         .thenAnswer((_) async => Right(<ResultSearch>[]));
 

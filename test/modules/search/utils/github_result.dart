@@ -26,7 +26,7 @@ const githubResult = """
       "score": 1.0
     },
     {
-      "login": "adaojreess",
+      "login": "'package:flutter/src/widgets/framework.dart'",
       "id": 32528950,
       "node_id": "MDQ6VXNlcjMyNTI4OTUw",
       "avatar_url": "https://avatars.githubusercontent.com/u/32528950?v=4",
